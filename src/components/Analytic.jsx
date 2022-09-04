@@ -162,7 +162,7 @@ function Analytic() {
             <div className="analytics">
                 <div className="analytics__details">
                     <div>
-                        <h4>Sales Analytics</h4>
+                        <h4>Analytics</h4>
                     </div>
                     <div>
                         <button>Switch to Weekly</button>

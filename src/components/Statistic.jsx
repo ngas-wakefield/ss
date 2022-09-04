@@ -5,20 +5,21 @@ import { AiFillExperiment } from "react-icons/ai";
 import { AiFillDollarCircle } from "react-icons/ai";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { AiOutlineArrowDown } from "react-icons/ai";
+import {AiOutlineControl} from "react-icons/ai";
 function Statistic() {
     return (
         <Section>
             <div className="analytic color1">
                 <div className="design">
                     <div className="logo">
-                        <AiFillTag />
+                        <AiOutlineControl/>
                     </div>
                     <div className="content">
-                        <h5>$123,456,789</h5>
+                        <h5>SQ1</h5>
                     </div>
                 </div>
                 <div className="total">
-                    <h6>TOTAL SALES</h6>
+                    <h6>NUTRIENT AVAILABILITY</h6>
                     <span className="t1">+18%</span>
                     <AiOutlineArrowUp className="svg1" />
                 </div>
@@ -26,14 +27,14 @@ function Statistic() {
             <div className="analytic color2">
                 <div className="design">
                     <div className="logo">
-                        <AiFillExperiment />
+                        <AiOutlineControl />
                     </div>
                     <div className="content">
-                        <h5>$123,456,345</h5>
+                        <h5>SQ2</h5>
                     </div>
                 </div>
                 <div className="total">
-                    <h6>TOTAL EXPENSES</h6>
+                    <h6>NUTRIENT RETENTION CAPACITY</h6>
                     <span className="t2">-9%</span>
                     <AiOutlineArrowDown className="svg2" />
                 </div>
@@ -41,14 +42,14 @@ function Statistic() {
             <div className="analytic color3">
                 <div className="design">
                     <div className="logo">
-                        <AiFillDollarCircle />
+                        <AiOutlineControl />
                     </div>
                     <div className="content">
-                        <h5>$123,456,876</h5>
+                        <h5>SQ3</h5>
                     </div>
                 </div>
                 <div className="total">
-                    <h6>TOTAL REVENUE</h6>
+                    <h6>ROOTING CONDITIONS</h6>
                     <span className="t1">+24%</span>
                     <AiOutlineArrowUp className="svg1" />
                 </div>

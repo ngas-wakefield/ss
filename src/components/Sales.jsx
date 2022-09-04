@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import { AreaChart, Area, Tooltip, ResponsiveContainer } from "recharts";
+import { AreaChart, Area, Tooltip, ResponsiveContainer, YAxis, XAxis} from "recharts";
 import { AiOutlineCaretDown } from "react-icons/ai";
 
 function Sales() {
@@ -9,13 +9,13 @@ function Sales() {
         <div className="sales">
       <div className="sales__details">
         <div>
-          <h4>Sales Overview</h4>
+          <h4>Soil Overview</h4>
          
         </div>
         <div>
          
           <button>
-          Monthly
+          Year
           <AiOutlineCaretDown />
           </button>
         </div>
@@ -39,53 +39,71 @@ function Sales() {
             <Tooltip cursor={false} />
             <Area
               type="monotone"
-              dataKey="data2"
+              dataKey="data3"
               stroke="#668DFF"
               fill="url(#colorview)"
             />
             <Area
               type="monotone"
-              dataKey="data1"
-              stroke="#668DFF"
+              dataKey="data2"
+              stroke="#949191"
               fill="url(#colorview)"
             />
+            <Area
+              type="monotone"
+              dataKey="data1"
+              stroke="#ff350f"
+              fill="url(#colorview)"
+            />
+            <YAxis></YAxis>
+            <XAxis></XAxis>
           </AreaChart>
         </ResponsiveContainer>
+        <div class="line"></div>
       </div>
+
         </div>
         </Section>
+        
     )
 }
 
 export default Sales
 const data = [
     {
-      data2: 2000,
-      data1: 2400,
+      data3: 0,
+      data2: 0,
+      data1: 0,
     },
     {
-      data2: 4000,
-      data1: 1398,
+      data3: 2500,
+      data2: 1000,
+      data1: -2000,
     },
     {
-      data2: 5000,
-      data1: 12800,
+      data3: 1800,
+      data2: 800,
+      data1: -4000
     },
     {
-      data2: 8780,
-      data1: 3908,
+      data3: 4500,
+      data2: 1500,
+      data1: -2500,
     },
     {
-      data2: 9890,
-      data1: 4800,
+      data3: 6000,
+      data2: 0,
+      data1: -4500,
     },
     {
-      data2: 11390,
-      data1: 3800,
+      data3: 6500,
+      data2: 1000,
+      data1: -4300,
     },
     {
-      data2: 3490,
-      data1: 4300,
+      data3: 6600,
+      data2: 0,
+      data1: -4800,
     },
   ];
   const Section = styled.section`

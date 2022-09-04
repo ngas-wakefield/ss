@@ -7,7 +7,7 @@ function Orders() {
         <div className="orders">
       <div className="orders__details">
           <div>
-                <h4>Recent Order</h4> 
+                <h4>Your land</h4> 
           </div>
           <div> 
             <button> SEE ALL</button>
@@ -18,18 +18,32 @@ function Orders() {
             <table>
             <tr>
               <th>Tracking ID</th>
-              <th>Product Name</th>
-              <th>Date</th>
-              <th>Price</th>
-              <th>Status</th>
+              <th>Section</th>
+            </tr>
+            <tr>
+                <td>#9876545</td>
+                <td>Kiwi</td>
+                <td ><button>View</button></td>
+
             </tr>
             <tr>
               <td>#9876543</td>
-              <td className="img"> <img src={apple} alt="" /><span>Apple Watch</span></td>
-              <td>Jul 29, 2021</td>
-              <td>$329</td>
-              <td ><button>Complete</button></td>
+              <td><span>Apples</span></td>
+              <td ><button>View</button></td>
             </tr>
+
+            <tr>
+              <td>#9876548</td>
+              <td><span>Oranges</span></td>
+              <td ><button>View</button></td>
+            </tr>
+
+            <tr>
+              <td>#9876552</td>
+              <td><span>Cabbage</span></td>
+              <td ><button>View</button></td>
+            </tr>
+            
             </table>
         </div>
         </div>
@@ -59,6 +73,7 @@ const Section = styled.section`
             }
         }
     }
+    
     .orders__table {
         display: flex;
         justify-content: space-between;

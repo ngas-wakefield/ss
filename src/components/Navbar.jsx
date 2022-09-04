@@ -4,7 +4,7 @@ import { BiSearch } from "react-icons/bi";
 import { AiOutlineCalendar } from "react-icons/ai";
 import { AiOutlineBell } from "react-icons/ai";
 import { AiOutlineCaretDown } from "react-icons/ai";
-import avatarImage from "../assets/avatar.jpg"
+import avatarImage from "../assets/avatar.svg"
 function Navbar() {
     return (
         <Nav>
@@ -14,7 +14,7 @@ function Navbar() {
             <div className="notification">
                 <div className="date">
                     <AiOutlineCalendar />
-                    <span>Jan 30, 2022</span>
+                    <span>SEP 09, 2022</span>
                 </div>
                 <div className="icon">
                     <BiSearch />
@@ -22,7 +22,6 @@ function Navbar() {
                     <AiOutlineBell />
                     <span>|</span>
                     <div className="image">
-                        <img src={avatarImage} alt="" />
                     </div>
                     <AiOutlineCaretDown />
                 </div>

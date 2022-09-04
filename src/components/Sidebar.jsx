@@ -18,7 +18,7 @@ function Sidebar() {
             <div className="top">
                     <div className="brand">
                         <AiFillCodeSandboxCircle />
-                        <span>AAE IdeaPro</span>
+                        <span>Soilsight</span>
                     </div>
                     <div className="links">
                         <ul>
@@ -31,24 +31,7 @@ function Sidebar() {
                                     <span className="border">Dashboard</span>
                                 </a>
                             </li>
-                            <li
-                            className={currentLink === 2 ? "active" : "none"}
-                            onClick={() => setCurrentLink(2)}
-                            >
-                                <a href="#">
-                                    <AiOutlineShoppingCart />
-                                    <span className="border">Orders</span>
-                                </a>
-                            </li>
-                            <li
-                            className={currentLink === 3 ? "active" : "none"}
-                            onClick={() => setCurrentLink(3)}
-                            >
-                                <a href="#">
-                                    <AiOutlineShopping />
-                                    <span className="border">Products</span>
-                                </a>
-                            </li>
+
                             <li
                             className={currentLink === 4 ? "active" : "none"}
                             onClick={() => setCurrentLink(4)}
@@ -58,24 +41,8 @@ function Sidebar() {
                                     <span className="border">Overview</span>
                                 </a>
                             </li>
-                            <li
-                            className={currentLink === 5 ? "active" : "none"}
-                            onClick={() => setCurrentLink(5)}
-                            >
-                                <a href="#">
-                                    <AiOutlineUsergroupAdd />
-                                    <span className="border">Customers</span>
-                                </a>
-                            </li>
-                            <li
-                            className={currentLink === 6 ? "active" : "none"}
-                            onClick={() => setCurrentLink(6)}
-                            >
-                                <a href="#">
-                                    <AiOutlineMessage />
-                                    <span className="border">Message</span>
-                                </a>
-                            </li>
+ 
+
                             <li
                             className={currentLink === 7 ? "active" : "none"}
                             onClick={() => setCurrentLink(7)}
@@ -87,12 +54,6 @@ function Sidebar() {
                             </li>
                         </ul>
                     </div>
-            </div>
-            <div className="map">
-                <SiAccusoft />
-                <span>Unlock more information<br></br>
-                now ! Upgrade to <strong>PRO</strong>
-                </span>
             </div>
             <div className="logout">
                 <a href="#">

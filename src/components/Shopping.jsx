@@ -4,6 +4,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { AiOutlineShopping } from "react-icons/ai";
 import { AiOutlineTeam } from "react-icons/ai";
 import { AiFillCaretUp } from "react-icons/ai";
+import { AiOutlineControl } from "react-icons/ai";
 
 function Shopping() {
     return (
@@ -11,16 +12,16 @@ function Shopping() {
         <div className="shopping ">
         <div className="design ">
             <div className="logo img1">
-            <AiOutlineShoppingCart />
+            <AiOutlineControl />
         </div>
         </div>
         <div className="total ">
-        <h6>ONLINE ORDERS</h6>
+        <h6>SQ4</h6>
         
       
         </div>
         <div className="number ">
-        <h6>12302</h6>
+        <h6>ROOT OXYGEN</h6>
         <AiFillCaretUp className="svg1" />
         <span className="t1">146 </span>
         </div>
@@ -29,37 +30,37 @@ function Shopping() {
         <div className="shopping ">
         <div className="design ">
             <div className="logo img2">
-            <AiOutlineShoppingCart />
+            <AiOutlineControl />
         </div>
         </div>
         <div className="total ">
-        <h6>OFFLINE ORDERS</h6>
+        <h6>SQ5</h6>
         
       
         </div>
         <div className="number ">
-        <h6>10893</h6>
+        <h6>EXCESS SALTS</h6>
         <AiFillCaretUp className="svg1" />
-        <span className="t1">67 </span>
+        <span className="t1">5 </span>
         </div>
           
         </div>
         <div className="shopping ">
         <div className="design ">
             <div className="logo img3">
-            <AiOutlineTeam />
+            <AiOutlineControl />
             
         </div>
         </div>
         <div className="total ">
-        <h6>TOTAL USERS</h6>
+        <h6>SQ7</h6>
         
       
         </div>
         <div className="number ">
-        <h6>78691</h6>
+        <h6>TOXICITY</h6>
         <AiFillCaretUp className="svg1" />
-        <span className="t1">324 </span>
+        <span className="t1">0 </span>
         </div>
           
         </div>
@@ -70,12 +71,12 @@ function Shopping() {
         </div>
         </div>
         <div className="total ">
-        <h6>TOTAL PRODUCTS</h6>
+        <h6>SQ8</h6>
         
       
         </div>
         <div className="number ">
-        <h6>1032</h6>
+        <h6>WORKABILITY</h6>
         <AiFillCaretUp className="svg1" />
         <span className="t1">48 </span>
         </div>
