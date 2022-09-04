@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
-import { AreaChart, Area, Tooltip, ResponsiveContainer, YAxis, XAxis} from "recharts";
+import { AreaChart, Area, Tooltip, ResponsiveContainer, YAxis, XAxis, Legend} from "recharts";
 import { AiOutlineCaretDown } from "react-icons/ai";
 
 function Sales() {
@@ -34,29 +34,32 @@ function Sales() {
               <linearGradient id="colorview" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="30%" stopColor="#668DFF" stopOpacity={0.4} />
                 <stop offset="85%" stopColor="#D4E0FF" stopOpacity={0.2} />
+                
+
               </linearGradient>
             </defs>
             <Tooltip cursor={false} />
             <Area
               type="monotone"
-              dataKey="data3"
+              dataKey="improving"
               stroke="#668DFF"
               fill="url(#colorview)"
             />
             <Area
               type="monotone"
-              dataKey="data2"
+              dataKey="static"
               stroke="#949191"
               fill="url(#colorview)"
             />
             <Area
               type="monotone"
-              dataKey="data1"
+              dataKey="declining"
               stroke="#ff350f"
               fill="url(#colorview)"
             />
             <YAxis></YAxis>
             <XAxis></XAxis>
+            <Legend></Legend>
           </AreaChart>
         </ResponsiveContainer>
         <div class="line"></div>
@@ -71,39 +74,39 @@ function Sales() {
 export default Sales
 const data = [
     {
-      data3: 0,
-      data2: 0,
-      data1: 0,
+      improving: 0,
+      static: 0,
+      declining: 0,
     },
     {
-      data3: 2500,
-      data2: 1000,
-      data1: -2000,
+      improving: 2500,
+      static: 1000,
+      declining: -2000,
     },
     {
-      data3: 1800,
-      data2: 800,
-      data1: -4000
+      improving: 1800,
+      static: 800,
+      declining: -4000
     },
     {
-      data3: 4500,
-      data2: 1500,
-      data1: -2500,
+      improving: 4500,
+      static: 1500,
+      declining: -2500,
     },
     {
-      data3: 6000,
-      data2: 0,
-      data1: -4500,
+      improving: 6000,
+      static: 0,
+      declining: -4500,
     },
     {
-      data3: 6500,
-      data2: 1000,
-      data1: -4300,
+      improving: 6500,
+      static: 1000,
+      declining: -4300,
     },
     {
-      data3: 6600,
-      data2: 0,
-      data1: -4800,
+      improving: 6600,
+      static: 0,
+      declining: -4800,
     },
   ];
   const Section = styled.section`

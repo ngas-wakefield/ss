@@ -5,7 +5,7 @@ function Add() {
         <Section>
                 <div>
                     <button>
-                        View Qualities
+                        View Analytics
                     </button>
                 </div>
         </Section>
